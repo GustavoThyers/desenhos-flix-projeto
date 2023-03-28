@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+p span{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+    
+    
+
+}
+@media screen and (max-width:550px) {
+    ul{
+        display: none;
+        margin-top: 80px;
+        height: 70vh;
+        margin-right: 300px;
+        background-color: white;
+        
+        
+    }
+    ul li a{
+        color: black;
+        margin-left:100px ;
+       
+    }
+    .button-nav a{
+        color: black;
+        text-align: center;
+        margin-right: 80px;
+    }
+    .button-nav{
+        margin-left: 10px;
+    }
+    
+}
+li a{
+    transition-duration: 0.3s;
+    color: white;
+}
+li a:hover{
+    color: red;
+}
+
+.conteiner{
+    
+}
+
+.itens h1{
+    color: yellow;
+    font-size: 50px;
+
+}
+
+.itens p{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
+
+.itens a{
+    color: black;
+    background-color: red;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.itens a:hover{
+    background-color: rgb(160, 17, 17);
+    color: white;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+    
+}
+
+.navbar li, .logo{
+    margin-top: 20px;
+}
+
+.button-nav{
+    margin-right: 30px;
+    background-color: red;
+    padding: 5px 20px;
+    transition-duration: 0.5s;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+
+.button-nav:hover{
+    background-color: rgb(170, 21, 21);
+}
+
+.logo{
+    margin-left: 20px;
+    color: white;
+
+    
+}
+.logo p{
+    font-size: 20px;
+}
+
+.img-banner{
+    background-image: url('https://wallpapercave.com/dwp1x/wp3862837.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    background-position: 0px -10px;
+    position: relative;
+    top: -20px;
+    
+}
+
+.itens{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    height: 400px;
+}
+
+.card-iten {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-iten img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    filter: blur(0px);
+  }
+  
+  .card-iten:hover img {
+    filter: blur(3px) brightness(50%);
+  }
+
+  .play-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease;
+    font-weight: bold;
+   
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    background-color: red;
+    padding: 5px 10px;
+  }
+  
+  .card-iten:hover .play-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+    cursor: pointer;
+  }
+
+    .cards{
+        display: flex;
+        flex-wrap:wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-cards{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    .icone{
+        
+        height: 100px;
+    }
+
+    #icone{
+        color: white;
+        
+        padding: 20px;    
+        
+        
+        
+    }
+    @media(max-width:500px){
+        .img-banner{
+    
+            height: 400px;
+            background-position: top;
+            
+            
+        }
+    }
+    @media screen and (min-width:550px){
+        
+    #icone{
+        display: none;
+        
+
+    }
+   
+    }
+    
+
+
